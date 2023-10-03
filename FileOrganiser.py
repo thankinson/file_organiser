@@ -3,7 +3,7 @@ from pathlib import Path
 
 # this is a list of file formats that the function will check 
 directoryList = {
-  "Images_Folder" : [".jpg", ".jpeg", ".gif", ".pmg"],
+  "Images_Folder" : [".jpg", ".jpeg", ".gif", ".png"],
   "Video_folder": [".wmv", ".mov", ".mp4", ".mpg", ".mpeg", ".mkv"],
   "Zip_Folder": [".iso", ".dmg", ".7z", ".rz", ".gz", ".tar", ".rar", ".zip"],
   "Music_Folder": [".mp3", ".msv", ".wav", ".wma"],
