@@ -12,12 +12,24 @@ directoryList = {
   "Documents_Folder": [".doc", ".docx"],
 }
 
-# i barly understand this. so ignor it
+# this function converts directoryList into readable code to be used in the sortFiles() function. 
 File_Format_Dictionary = { 
   final_file_format: directory
   for directory, file_format_stored in directoryList.items()
   for final_file_format in file_format_stored
   }
+# this is what it looks like when passed through File_Format_Dictionary
+# {
+#   '.jpg': 'Images_Folder', '.jpeg': 'Images_Folder', '.gif': 'Images_Folder', 
+#   '.pmg': 'Images_Folder', '.wmv': 'Video_folder', '.mov': 'Video_folder', 
+#   '.mp4': 'Video_folder', '.mpg': 'Video_folder', '.mpeg': 'Video_folder', 
+#   '.mkv': 'Video_folder', '.iso': 'Zip_Folder', '.dmg': 'Zip_Folder', 
+#   '.7z': 'Zip_Folder', '.rz': 'Zip_Folder', '.gz': 'Zip_Folder', 
+#   '.tar': 'Zip_Folder', '.rar': 'Zip_Folder', '.zip': 'Zip_Folder', 
+#   '.mp3': 'Music_Folder', '.msv': 'Music_Folder', '.wav': 'Music_Folder', 
+#   '.wma': 'Music_Folder', '.pdf': 'PDF_Folder', '.exe': 'EXE_Folder', 
+#   '.msi': 'EXE_Folder', '.doc': 'Documents_Folder', '.docx': 'Documents_Folder'
+#  }
 
 # the function
 def sortFiles():
